@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Beer beer = new AlcoholicBeer();
-        System.out.println(beer.toString());
+        System.out.println(beer);
     }
 
     public interface Beer {
@@ -17,5 +17,9 @@ public class Main {
             }
         }
 
+        @Override
+        public boolean isAlcoholic() {
+            return true;
+        }
     }
 }
